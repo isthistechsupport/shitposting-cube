@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "shitposting cube", "shitposting cube\shitposting cube.fsproj", "{5847F390-570A-427A-B7FA-751AEDCE7DE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5847F390-570A-427A-B7FA-751AEDCE7DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5847F390-570A-427A-B7FA-751AEDCE7DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5847F390-570A-427A-B7FA-751AEDCE7DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5847F390-570A-427A-B7FA-751AEDCE7DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17972312-EF03-43DA-8E3E-8F566E74035A}
+	EndGlobalSection
+EndGlobal
