@@ -43,7 +43,7 @@ let main _ =
             [path "/cubepost" >=> choose [
                 GET  >=> request (fun r -> Writers.setMimeType "text/plain" >=> OK (shitpost r.query))
                 request (fun _ -> Writers.setMimeType "text/plain" >=> RequestErrors.NOT_FOUND (cubeShitpost "LOL NO GET")) ]
-             path "/" >=> request (fun _ -> Writers.setMimeType "text/plain" >=> RequestErrors.NOT_FOUND (cubeShitpost "LOL NO CUBEPOST PATH"))]
+             request (fun _ -> Writers.setMimeType "text/plain" >=> RequestErrors.NOT_FOUND (cubeShitpost "LOL NO CUBEPOST PATH"))]
 
     let _, server = startWebServerAsync conf sample
 
