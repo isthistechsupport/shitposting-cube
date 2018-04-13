@@ -2,7 +2,7 @@
 Makes any string into a shitposting cube, ready to use in [pcj](https://www.reddit.com/r/programmingcirclejerk/). Special thanks to [stone_henge](https://www.reddit.com/r/programmingcirclejerk/comments/8axnso/in_go_the_programmer_is_encouraged_to_handle/dx5hzj9/) for the original algorithm, however, since Python only has the lol too slow variant and the lol not turing complete variant I decided to rewrite it in a real, 4D webscale, futuristic language like Go, then ditched it all and rewrote it in OCaml for wageslaves
 
 # Features
-Well, it's a webservice now, albeit it runs on localhost. You can now clone this repo, open it with Visual Studio and compile it, then run it and visit localhost:8080/cubepost?cube= and indicate on the querystring what to cube. It'll return a plain text answer containing the cubed string. I use Suave for the webserver because it's the most decent webserver I found that's wrote on F# so you're stuck with it too. 
+Well, it's a webservice now, albeit it runs on localhost. You can now clone this repo, open it with Visual Studio and compile it, then run it and visit localhost:8080/cubepost?cube= and indicate on the querystring what to cube. It'll return a plain text answer containing the cubed string. I use [Suave](https://suave.io/) for the webserver because it's the ~~only one with a logo hipster enough for me~~ most decent webserver I found that's wrote on F# so you're stuck with it too. 
 
 # Roadmap
  * ~~I'll make it into SaaS (Shitposting as a Service) by putting up a webservice~~ I'll put the webservice somewhere in the actual web so you don't have to clone the repo, compile it and run it locally, but it runs now
