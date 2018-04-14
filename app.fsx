@@ -68,8 +68,14 @@ let html = """<!doctype html>
     </body>
 </html>"""
 
-let cts = new CancellationTokenSource()
-let conf = { defaultConfig with cancellationToken = cts.Token }
+let config = 
+    let port = System.Environment.GetEnvironmentVariable("PORT")
+    let ip127  = IPAddress.Parse("127.0.0.1")
+    let ipZero = IPAddress.Parse("0.0.0.0")
+
+    { defaultConfig with 
+        bindings=[ (if port = null then HttpBinding.create HTTP ip127 (uint16 8080)
+                    else HttpBinding.create HTTP ipZero (uint16 port)) ] }
 
 let shitpost q =
     defaultArg (Option.ofChoice (q ^^ "cube")) "LOL NO CUBE PARAM" |> cubeShitpost
@@ -86,4 +92,4 @@ let main : WebPart =
 
 printfn "start sending requests now"
 
-do startWebServer conf main
+do startWebServer config main
