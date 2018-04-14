@@ -1,0 +1,38 @@
+div {
+	margin: auto;
+	width: 70%;
+    padding: 50px;
+	box-sizing: border-box;
+	float: center;
+}
+
+form {
+    font-family: Helvetica;
+    font-size: 20px;
+	text-align: center;
+}
+
+input[type=text] {
+	width: 30%;
+	margin: 20px;
+}
+
+input[type=button] {
+	width: 50px;
+}
+
+.codebox {
+	/* Below are styles for the codebox (not the code itself) */
+	border:1px solid black;
+	background-color:#EEEEFF;
+	width:300px;
+	overflow:auto;    
+	padding:10px;
+	margin:200px auto;
+}
+
+.codebox code {
+	/* Styles in here affect the text of the codebox */
+	font-size:0.9em;
+	/* You could also put all sorts of styling here, like different font, color, underline, etc. for the code. */
+}
