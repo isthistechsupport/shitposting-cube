@@ -1,3 +1,5 @@
+#r """.\packages\Suave.2.2.1\lib\net40\Suave.dll"""
+
 open System.Net
 open Suave
 open Suave.Filters
