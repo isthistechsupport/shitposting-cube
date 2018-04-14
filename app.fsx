@@ -1,5 +1,4 @@
-open System
-open System.Threading
+open System.Net
 open Suave
 open Suave.Filters
 open Suave.Operators
