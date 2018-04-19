@@ -6,6 +6,7 @@ Well, it's a webservice now, you can find it at [Heroku](https://cubeposter.hero
 
 # Roadmap
  * ~~I'll make it into SaaS (Shitposting as a Service) by putting up a webservice~~ ~~I'll put the webservice somewhere in the actual web so you don't have to clone the repo, compile it and run it locally, but it runs now~~ Finally, it plays along with heroku!
+ * I'll add more transformations to it (mainly squareposting and hypercubeposting for the moment)
  * Maybe I'll transcompile it to JavaScript, post it as an npm package and get 10 million downloads a day because if is-even can do it so can I.
  * I may also port it to VB.NET because @fukkaudekku once said it's best language and I realized she's right.
  * Until then, it's only available in OCaml Enterprise Edition&trade;, so enjoy and don't forget to spam "lol no hkts"
