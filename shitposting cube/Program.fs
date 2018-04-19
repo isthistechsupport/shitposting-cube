@@ -43,8 +43,8 @@ let html = """<!doctype html>
         <div style="margin: auto; width: 70%; padding: 50px; box-sizing: border-box; float: center;">
             <form style="font-family: Helvetica; font-size: 20px; text-align: center;">
                 Text to cube:<br>
-                <input type="text" id="strToCube" style="width: 30%; margin: 20px;"><br>
-                <input type="button" name="submit" value="Go" onclick="retrieveCube()" style="width: 50px;"><br>
+                <input type="text" id="strToTransform" style="width: 30%; margin: 20px;"><br>
+                <input type="button" name="submit" value="Go" onclick="retrieveTransform()" style="width: 50px;"><br>
             </form>
             <div class="codebox" style="border:1px solid black; background-color:#EEEEFF; width:auto; height:auto; overflow:auto; padding:10px; margin:100px auto;">
                 <pre>
@@ -52,16 +52,17 @@ let html = """<!doctype html>
                     </code>
                 </pre>
             </div>
+            <p style="font-family: Helvetica; font-size: 15px; text-align: center;"><a href="https://github.com/dechtech1/shitposting-cube">Find the backend in GitHub</a></p>
         </div>
         <script>
-        function retrieveCube() {
+        function retrieveTransform() {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("codeboxCode").innerHTML = '\n' + this.responseText;
                 }
             };
-            xhttp.open("GET", "/api/cubepost?cube=" + document.getElementById("strToCube").value, true);
+            xhttp.open("GET", "/api/cubepost?cube=" + document.getElementById("strToTransform").value, true);
             xhttp.send();
         }
         </script>

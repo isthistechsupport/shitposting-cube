@@ -1,28 +1,38 @@
 <!doctype html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>The HTML5 Herald</title>
-		<meta name="description" content="The HTML5 Herald">
-		<meta name="author" content="SitePoint">
-	</head>
-	<body>
-		<script>
-			function cubepost() {
-				document.getElementById("codeboxCode").innerHTML = '<iframe src="api/cubepost?cube=' + document.getElementById("strToCube").value + '" style="border:none;">'
-			}
-		</script>
-		<div style="margin: auto; width: 70%; padding: 50px; box-sizing: border-box; float: center;">
-			<form style="font-family: Helvetica; font-size: 20px; text-align: center;">
-				Text to cube:<br>
-				<input type="text" id="strToCube" style="width: 30%; margin: 20px;"><br>
-				<input type="button" name="submit" value="Go" onclick="cubepost()" style="width: 50px;"><br>
-			</form>
-			<div class="codebox" style="border:1px solid black; background-color:#EEEEFF; width:70%; overflow:auto; padding:10px; margin:100px auto;">
-				<code id="codeboxCode" style="font-size:0.9em;">
-				</code>
-			</div>
-		</div>
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <title>The Shitcubeposter</title>
+        <meta name="description" content="The Shitcubeposter">
+        <meta name="author" content="dechtech1">
+    </head>
+    <body>
+        <div style="margin: auto; width: 70%; padding: 50px; box-sizing: border-box; float: center;">
+            <form style="font-family: Helvetica; font-size: 20px; text-align: center;">
+                Text to cube:<br>
+                <input type="text" id="strToTransform" style="width: 30%; margin: 20px;"><br>
+                <input type="button" name="submit" value="Go" onclick="retrieveTransform()" style="width: 50px;"><br>
+            </form>
+            <div class="codebox" style="border:1px solid black; background-color:#EEEEFF; width:auto; height:auto; overflow:auto; padding:10px; margin:100px auto;">
+                <pre>
+                    <code id="codeboxCode" style="font-size:0.9em;">
+                    </code>
+                </pre>
+            </div>
+            <p style="font-family: Helvetica; font-size: 15px; text-align: center;"><a href="https://github.com/dechtech1/shitposting-cube">Find the backend in GitHub</a></p>
+        </div>
+        <script>
+        function retrieveTransform() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("codeboxCode").innerHTML = '\n' + this.responseText;
+                }
+            };
+            xhttp.open("GET", "/api/cubepost?cube=" + document.getElementById("strToTransform").value, true);
+            xhttp.send();
+        }
+        </script>
+    </body>
 </html>
