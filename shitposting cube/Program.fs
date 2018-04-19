@@ -52,7 +52,7 @@ let html = """<!doctype html>
                     </code>
                 </pre>
             </div>
-            <p style="font-family: Helvetica; font-size: 15px; text-align: center;"><a href="https://github.com/dechtech1/shitposting-cube">Find the backend in GitHub</a></p>
+            <p style="font-family: Helvetica; font-size: 15px; text-align: center;"><a href="https://github.com/dechtech1/shitposting-cube">Find the backend on GitHub</a></p>
         </div>
         <script>
         function retrieveTransform() {
