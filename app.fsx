@@ -63,7 +63,7 @@ let html = """<!doctype html>
                     document.getElementById("codeboxCode").innerHTML = '\n' + this.responseText;
                 }
             };
-            xhttp.open("GET", "/api/cubepost?cube=" + document.getElementById("strToTransform").value, true);
+            xhttp.open("GET", "/api/cubepost?transform=" + document.getElementById("strToTransform").value, true);
             xhttp.send();
         }
         </script>
