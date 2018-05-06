@@ -1,0 +1,15 @@
+---------Welcome to PCJ pasta---------
+
+Welcome to pcj! Featuring:
+
+* zero-cost shitposting
+* jerk semantics
+* guaranteed circlejerk safety
+* posts without data races
+* trait-based lol no generics
+* shitpost matching
+* jerk inference
+* minimal bot spam
+* efficient hackernews bindings
+
+Don't forget to grab a flair out of the sidebar and a list of talking points to know what to spam depending on the thread jerk. Or, if unsure, just spam "lol no generics" on every thread about Go, "How exciting! How exciting!" on every thread about Rust, and "this but unironically" everywhere else, you can't go wrong there!
